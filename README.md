@@ -14,12 +14,12 @@ This repository serves as my core research project for the **GovAI Summer Fellow
 ## 📚 Prior Literature & Inspiration
 Katibin builds directly on foundational research exploring hidden model behaviors and systemic bias:
 
-* **[AuditBench](https://arxiv.org/abs/2503.10965)**
-* **[Strategic Deception](https://arxiv.org/abs/2602.22755)** 
-* **[Evasion Tactics](https://arxiv.org/abs/2602.08877)** 
-* **[CFPD-Benchmark](https://arxiv.org/abs/2503.23688)** 
-* **[Alignment Audits](https://arxiv.org/abs/2503.06263)** 
-* **[Mapping Geopolitical Bias](https://airi-institute.github.io/geopolitical_llm_bias/)** 
+* **[Auditing language models for hidden objectives](https://arxiv.org/abs/2503.10965)**
+* **[AuditBench: Evaluating Alignment Auditing Techniques on Models with Hidden Behaviors](https://arxiv.org/abs/2602.22755)** 
+* **[Stress-Testing Alignment Audits With Prompt-Level Strategic Deception](https://arxiv.org/abs/2602.08877)** 
+* **[Mapping Geopolitical Bias in 11 Large Language Models: A Bilingual, Dual-Framing Analysis of U.S.-China Tensions](https://arxiv.org/abs/2503.23688)** 
+* **[Critical Foreign Policy Decisions (CFPD)-Benchmark: Measuring Diplomatic Preferences in Large Language Models](https://arxiv.org/abs/2503.06263)** 
+* **[Uncovering Geopolitical Bias in Large Language Models](https://airi-institute.github.io/geopolitical_llm_bias/)** 
 
 ---
 

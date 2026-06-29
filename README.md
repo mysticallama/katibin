@@ -1,5 +1,7 @@
 # Katibin
 
+![Katibin Mascot](assets/angel.png)
+
 An empirical auditing framework to quantify geopolitical bias and long-horizon strategic steering in negotiation dialogues across frontier and international open-weight Large Language Models.
 
 ---

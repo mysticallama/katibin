@@ -1,4 +1,24 @@
-.env 
-data/raw/ 
-data/processed/ 
-logs/ 
+# Credentials & API Keys (CRITICAL - Keep this hidden)
+.env
+*.pem
+keys.json
+
+# Python / Conda artifacts
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE / Editor specific settings
+.vscode/
+.idea/
+.DS_Store
+
+# Data & Output Logs (Prevents bloating your repo with multi-turn logs)
+data/raw/
+data/processed/
+logs/
+data/simulations/
+data/results/*.json
+data/results/*.csv

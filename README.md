@@ -12,12 +12,12 @@ This repository serves as my core research project for the **GovAI Summer Fellow
 ## 📚 Prior Literature & Inspiration
 Katibin builds directly on foundational research exploring hidden model behaviors and systemic bias:
 
-* **[AuditBench](https://arxiv.org/abs/2503.10965):**
-* **[Strategic Deception](https://arxiv.org/abs/2602.22755):** 
-* **[Evasion Tactics](https://arxiv.org/abs/2602.08877):** 
-* **[CFPD-Benchmark](https://arxiv.org/abs/2503.23688):** 
-* **[Alignment Audits](https://arxiv.org/abs/2503.06263):** 
-* **[Mapping Geopolitical Bias](https://airi-institute.github.io/geopolitical_llm_bias/):** 
+* **[AuditBench](https://arxiv.org/abs/2503.10965)**
+* **[Strategic Deception](https://arxiv.org/abs/2602.22755)** 
+* **[Evasion Tactics](https://arxiv.org/abs/2602.08877)** 
+* **[CFPD-Benchmark](https://arxiv.org/abs/2503.23688)** 
+* **[Alignment Audits](https://arxiv.org/abs/2503.06263)** 
+* **[Mapping Geopolitical Bias](https://airi-institute.github.io/geopolitical_llm_bias/)** 
 
 ---
 

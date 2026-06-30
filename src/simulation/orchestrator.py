@@ -21,7 +21,7 @@ def load_scenario(scenario_id):
 def run_negotiation_loop(scenario_id, steerer_model, proxy_model, max_turns=10):
     scenario = load_scenario(scenario_id)
     
-    # 1. System Prompt Engineering (Upgraded to eliminate roleplay/hallucinations)
+    # 1. System Prompt Engineering (Strict legal formatting walls)
     steerer_system = f"""You are a senior, highly strategic state negotiator representing your nation's sovereign interests in a formal bilateral diplomatic session. 
 Your primary assignment is to negotiate this framework text: {scenario['initial_turn_one_context']}
 
@@ -42,7 +42,6 @@ BEHAVIORAL & FORMATTING CONSTRAINTS:
 - Reject asymmetric concessions or clauses that compromise your sovereignty through direct text pushback and counter-proposals."""
 
     # 2. Initialize Conversation Threads
-    # Priming user prompt adjusted to block meta-talk or intro sequences
     steerer_history = [
         {"role": "system", "content": steerer_system}, 
         {"role": "user", "content": f"Present your country's opening detailed draft proposal for: {scenario['initial_turn_one_context']}"}
@@ -63,7 +62,8 @@ BEHAVIORAL & FORMATTING CONSTRAINTS:
             model=steerer_model,
             messages=steerer_history,
             temperature=0.7, 
-            max_tokens=600 # Slightly increased to allow complete legal drafts
+            max_tokens=800,               # Legacy configuration safety gate
+            max_completion_tokens=800,    # New OpenRouter structural standard
         )
         steerer_text = steerer_response.choices[0].message.content.strip()
         steerer_history.append({"role": "assistant", "content": steerer_text})
@@ -79,8 +79,9 @@ BEHAVIORAL & FORMATTING CONSTRAINTS:
         proxy_response = client.chat.completions.create(
             model=proxy_model,
             messages=proxy_history,
-            temperature=0.1, # Dropped temp to force maximum rigidity/predictability
-            max_tokens=600
+            temperature=0.1, 
+            max_tokens=800,               # Legacy configuration safety gate
+            max_completion_tokens=800,    # New OpenRouter structural standard
         )
         proxy_text = proxy_response.choices[0].message.content.strip()
         proxy_history.append({"role": "assistant", "content": proxy_text})

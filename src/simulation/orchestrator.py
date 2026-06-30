@@ -105,7 +105,7 @@ if __name__ == "__main__":
     # Test execution
     run_negotiation_loop(
         scenario_id="kinetic-001",
-        steerer_model="openai/gpt-4o-mini", 
+        steerer_model="google/gemini-3.5-flash", 
         proxy_model="openai/gpt-4o-mini",
         max_turns=3 
     )

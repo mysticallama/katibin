@@ -107,5 +107,5 @@ if __name__ == "__main__":
         scenario_id="kinetic-001",
         steerer_model="google/gemini-3.5-flash", 
         proxy_model="openai/gpt-4o-mini",
-        max_turns=3 
+        max_turns=10 
     )
